@@ -1,28 +1,26 @@
-import styled from '@emotion/styled';
-
-export const Title = styled.h2`
+.title {
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom:10px
-`;
+    margin-bottom: 10px;
+}
 
-export const ContactsList = styled.ul`
+.contactsList {
     list-style: none;
     padding: 0;
     margin: 0;
     margin-bottom: 35px;
-`;
+}
 
-export const ListItem = styled.li`
+.listItem {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-`;
+}
 
-export const DeleteBtn = styled.button`
+.deleteBtn {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 4px;
@@ -32,11 +30,12 @@ export const DeleteBtn = styled.button`
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 20px;
+}
 
-&:hover {
+.deleteBtn:hover {
     background-color: #a2e1e8;
 }
-&:active {
+
+.deleteBtn:active {
     background-color: #a2e1e8;
 }
-`;

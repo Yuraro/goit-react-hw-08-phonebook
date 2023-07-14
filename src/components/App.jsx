@@ -2,7 +2,7 @@ import ContactForm from './ContactForm/ContactForm';
 import Contacts from './Contacts/Contacts';
 import React from 'react';
 import Filter from './Filter/Filter';
-import { WrapperContent } from './App.styled';
+import styles from './Loader/Loader.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts, selectError, selectIsLoading } from 'redux/selectors';
 import { useEffect } from 'react';
@@ -20,18 +20,17 @@ export const App = () => {
   }, [dispatch]);
 
   return (
-        <WrapperContent>
+      <div className={styles.wrapperContent}>
       <ContactForm />
       {contacts.length > 0 ? (
-        <>
-          <Contacts />
-          <Filter />
-        </>
-      ) : (
-        <p>The contact list is empty</p>
-      )}
-      {isLoading && !error && <Loader/>}
-      </WrapperContent>
-
+      <>
+        <Contacts />
+        <Filter />
+      </>
+    ) : (
+      <p>The contact list is empty</p>
+    )}
+    {isLoading && !error && <Loader />}
+    </div>
   );
 };

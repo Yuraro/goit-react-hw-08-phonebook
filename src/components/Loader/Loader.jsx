@@ -1,9 +1,9 @@
+import styles from './Loader.module.css';
 import { MagnifyingGlass } from 'react-loader-spinner';
-import { LoaderWrap } from './Loader.styled';
 
 const Loader = () => {
 return (
-    <LoaderWrap>
+    <div className={styles.loaderWrap}> 
     <MagnifyingGlass
         visible={true}
         height="80"
@@ -11,10 +11,10 @@ return (
         ariaLabel="MagnifyingGlass-loading"
         wrapperStyle={{}}
         wrapperClass="MagnifyingGlass-wrapper"
-        glassColor = '#c0efff'
-        color = '#76b5c5'
+        glassColor="#c0efff"
+        color="#76b5c5"
     />
-    </LoaderWrap>
+    </div>
 );
 };
 
