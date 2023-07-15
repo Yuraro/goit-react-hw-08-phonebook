@@ -1,28 +1,27 @@
-import css from './AuthMenu.module.css';
+import './AuthMenu.module.css';
 import { NavLink } from 'react-router-dom';
 
 const AuthMenu = () => {
-
 return (
-    <ul className={css.user__bar}>
-    <li className={css.navigation__item}>
+    <ul className="user__bar">
+        <li className="navigation__item">
         <NavLink
-        className={css.navigation__link}
-        to="/register"
-        style={({ isActive }) => (isActive ? css.navigation__link + ' ' + css.active : css.navigation__link)}
+            className="navigation__link"
+            activeClassName="active"
+            to="/register"
         >
-        Register
+            Register
         </NavLink>
-    </li>
-    <li className={css.navigation__item}>
+        </li>
+        <li className="navigation__item">
         <NavLink
-        className={css.navigation__link}
-        to="/login"
-        style={({ isActive }) => (isActive ? css.navigation__link + ' ' + css.active : css.navigation__link)}
-    >
-        Login
+            className="navigation__link"
+            activeClassName="active"
+            to="/login"
+        >
+            Login
         </NavLink>
-    </li>
+        </li>
     </ul>
 );
 };
