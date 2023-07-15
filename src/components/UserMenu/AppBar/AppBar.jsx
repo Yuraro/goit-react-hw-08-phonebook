@@ -4,7 +4,7 @@ import authSelectors from '../../../redux/auth/auth-selectors';
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 
-import UserMenu from '../UserBar/UserMenu';
+import UserMenu from '../UserBar/UserBar';
 import AuthMenu from '../AuthMenu/AuthMenu';
 import Navigation from '../Navigation/Navigation';
 

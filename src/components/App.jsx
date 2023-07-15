@@ -11,13 +11,14 @@ import AppBar from 'components/UserMenu/AppBar/AppBar';
 
 import Loader from 'components/Loader/Loader';
 
-import { refreshUser } from '../../redux/auth/auth-operations';
-import authSelectors from '../../redux/auth/auth-selectors';
-import { RestrictedRoute } from 'components/UserMenu/RestrictedRoute';
 import { PrivateRoute } from 'components/UserMenu/PrivateRoute';
+import { RestrictedRoute } from 'components/UserMenu/RestrictedRout';
+
+import { refreshUser } from '../redux/auth/auth-operations';
+import authSelectors from '../redux/auth/auth-selectors';
 
 
-const App = () => {
+export const App = () => {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(authSelectors.getIsRefreshing);
   
@@ -48,5 +49,3 @@ const App = () => {
     </Routes>
   );
 };
-
-export default App;
