@@ -1,0 +1,36 @@
+.user__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__email {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #76b5c5;
+}
+
+.logout__btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #76b5c5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout__btn:hover {
+    background-color: #a2e1e8;
+    transform: scale(1.1);
+}
+
+.logout__btn:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(118, 181, 197, 0.3);
+}
+
+.logout__btn:active {
+    background-color: #a2e1e8;
+    transform: scale(0.9);
+}
