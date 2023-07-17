@@ -3,31 +3,34 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 10px;
 }
 
-.navigation__item {
-    margin-right: 10px;
+.list__regist {
+    margin-right: 15px;
 }
 
-.navigation__link {
+.list__regist_item {
     text-decoration: none;
-    color: #76b5c5;
+    color: white;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.navigation__link:hover {
-    color: #a2e1e8;
-}
-
-.navigation__link.active {
-    color: #fff;
-    background-color: #76b5c5;
-    border-radius: 5px;
-    padding: 5px 10px;
+.list__regist_item:hover {
+    background-color: #a2e1e8;
+    padding: 10px 20px;
+    border-radius: 20px;
     transition: background-color 0.3s ease;
 }
 
-.navigation__link.active:hover {
+.list__regist_item.active {
+    background-color: #a2e1e8;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.list__regist_item.active:hover {
     background-color: #a2e1e8;
 }

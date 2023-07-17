@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './ContactForm.module.css';
+import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { addContact } from 'redux/operation';
@@ -34,10 +34,10 @@ const ContactForm = () => {
 
     return (
     <>
-    <h2 className={styles.title}>Phonebook</h2> 
-    <form className={styles.form} onSubmit={handleSubmit}> 
+    <h2 className={css.title}>Phonebook</h2> 
+    <form className={css.form} onSubmit={handleSubmit}> 
         <input
-        className={styles.input} 
+        className={css.input} 
         type="text"
         name="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -48,7 +48,7 @@ const ContactForm = () => {
         onChange={(e) => setName(e.target.value)}
         />
         <input
-        className={styles.input}
+        className={css.input}
         type="tel"
         name="number"
         pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -58,7 +58,7 @@ const ContactForm = () => {
         value={number}
         onChange={(e) => setNumber(e.target.value)}
         />
-        <button className={styles.addButton} type="submit">Add Contact</button> 
+        <button className={css.addButton} type="submit">Add Contact</button> 
     </form>
     </>
 );
