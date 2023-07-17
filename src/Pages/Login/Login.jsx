@@ -24,7 +24,7 @@ const handleChange = ({ target: { name, value } }) => {
     dispatch(login({ email: email, password: password }));
     setEmail('');
     setPassword('');
-};
+    };
 
     return (
     <div className={css.form__container}>
@@ -36,7 +36,7 @@ const handleChange = ({ target: { name, value } }) => {
             type="email"
             name="email"
             value={email}
-            onChange={handleChange}
+            onChange={handleChange} 
             ></input>
         </label>
 
